@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TeamGrapeBankApp
 {
-    internal class LoanAccount : BankAccount
+    public class LoanAccount : BankAccount
     {
         //Properties
         public decimal Interest { get; set; }
@@ -80,7 +80,6 @@ namespace TeamGrapeBankApp
                 Customer.CustomerMenu(loggedInCustomer);
             }
 
-
             Console.WriteLine($"\nCongratulations! You just took a loan of {userInputAmount} SEK which will cost {RoundTwoDecimals(ReturnMonthlyInterest(userinputKey, userInputAmount))} SEK per month in interest.");
             Console.ReadKey();
             string accountNumber = GenerateAccountNumber();
@@ -136,7 +135,7 @@ namespace TeamGrapeBankApp
             return totalBalance > 0 ? totalBalance : 0;
         }
 
-        internal static decimal ReturnMonthlyInterest(int Months, decimal Amount)
+        public static decimal ReturnMonthlyInterest(int Months, decimal Amount)
         {
             return (Amount * Admin.interestDict[Months] - Amount) / 12;
         }

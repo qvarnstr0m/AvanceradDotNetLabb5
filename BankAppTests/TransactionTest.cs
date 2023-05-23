@@ -14,6 +14,10 @@ namespace BankAppTests
     public class TransactionTest
     {
         [TestMethod]
+        [Description("To check that the from account is not negative after a transaction")]
+        [Owner("Martin")]
+        [Priority(1)]
+        [TestCategory("Unit Tests")]
         public void ProcessTransaction_Given_An_Amount_Expect_FromAccount_To_Be_Positive_After_Transfer() //BankAccount fromAccount, BankAccount toAccount, User fromOwner, User toOwner, decimal amount
         {
             //Given a transaction

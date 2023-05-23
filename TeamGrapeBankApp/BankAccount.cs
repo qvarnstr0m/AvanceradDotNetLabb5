@@ -133,10 +133,9 @@ namespace TeamGrapeBankApp
             string newAccountNumber;
             do
             {
-                Random ranAccount = new Random();
-                Random ranAccount2 = new Random();
-                int randAccount = ranAccount.Next(9999);
-                int randAccount2 = ranAccount2.Next(9999);
+                Random rnd = new Random();
+                int randAccount = rnd.Next(9999);
+                int randAccount2 = rnd.Next(9999);
                 newAccountNumber = randAccount.ToString() + "-" + randAccount2.ToString();
             }
             while (BankAccount.bankAccounts.Any(x => x.AccountNumber == newAccountNumber) && SavingsAccount.savingsAccounts.Any(x => x.AccountNumber == newAccountNumber));
@@ -150,8 +149,6 @@ namespace TeamGrapeBankApp
             Console.Clear();
             Console.WriteLine("Bankaccounts");
             List<BankAccount> userBankaccount = bankAccounts.FindAll(x => x.Owner == username);
-            
-
 
             for(int i=0; i < userBankaccount.Count; i++)
             {

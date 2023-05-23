@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeamGrapeBankApp", "TeamGrapeBankApp\TeamGrapeBankApp.csproj", "{C9DC6D13-2960-4773-B0A0-11EF675ABDF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamGrapeBankApp", "TeamGrapeBankApp\TeamGrapeBankApp.csproj", "{C9DC6D13-2960-4773-B0A0-11EF675ABDF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAppTests", "BankAppTests\BankAppTests.csproj", "{F6C97373-2B83-474E-AB7B-A8DF75739FB1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C9DC6D13-2960-4773-B0A0-11EF675ABDF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9DC6D13-2960-4773-B0A0-11EF675ABDF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9DC6D13-2960-4773-B0A0-11EF675ABDF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C97373-2B83-474E-AB7B-A8DF75739FB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C97373-2B83-474E-AB7B-A8DF75739FB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C97373-2B83-474E-AB7B-A8DF75739FB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C97373-2B83-474E-AB7B-A8DF75739FB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

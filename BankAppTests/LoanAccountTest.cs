@@ -13,7 +13,7 @@ namespace BankAppTests
         [TestMethod]
         [Description("To check that the ReturnMonthlyInterest method is returning the right monthly interest")]
         [Owner("Martin")]
-        [Priority(1)]
+        [Priority(3)]
         [TestCategory("Unit Tests")]
         public void ReturnMonthlyInterest_Expect_Interest_To_Be_41_666666666666666666666666667()
         {

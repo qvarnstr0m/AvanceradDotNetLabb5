@@ -14,7 +14,7 @@ namespace BankAppTests
         [TestMethod]
         [Description("To check that the GenerateAccountNumber is working ok do key")]
         [Owner("Martin")]
-        [Priority(1)]
+        [Priority(2)]
         [TestCategory("Unit Tests")]
         public void GenerateAccountNumber_Expect_AccountNumber_To_Be_In_Valid_Format()
         {
